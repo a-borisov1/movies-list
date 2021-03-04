@@ -1,0 +1,97 @@
+.settings {
+  display: flex;
+  
+
+  &__input {
+    position: relative;
+  &__field {
+width: 300px;
+height: 15px;
+padding: 10px;
+  }
+&__clear {
+position: absolute;
+right: 10px;
+top: 9px;
+color:grey;
+cursor: pointer;
+}
+  }
+
+  &__filter {
+    position: relative;
+
+    &__button {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 15px;
+      background-color: transparent;
+      outline: none;
+      border: 1px solid grey;
+      width:90px;
+      height: 39px;
+      padding: 10px;
+      box-sizing: border-box;
+      cursor:pointer
+    }
+  }
+}
+
+.filter_body {
+  position: absolute;
+  min-width: 100px;
+  margin-left: 15px;
+  border: 1px solid grey;
+  margin-top: 4px;
+  padding: 10px
+}
+
+.current_filter {
+  border: 1px solid grey;
+  padding: 10px;
+  width: 302px;
+  margin-top:3px;
+
+  &__element {
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+    &__name {
+      text-align: left;
+      margin: 0;
+    }
+
+    &__category {
+      color:grey;
+      font-size: small;
+      margin: 0;
+    }
+  }
+
+}
+
+.current_filter_item {
+  display: flex;
+  justify-content: left;
+}
+
+.d-none {
+  display: none;
+}
+
+.any {
+ margin: 0 
+}
+
+.star-image {
+  width: 13; 
+  position: relative;
+  top: 1px
+}
+
+.form {
+  position: absolute;
+}
